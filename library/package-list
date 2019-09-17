@@ -1,0 +1,11 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.thefuntasty.loginsdk.library
+com.thefuntasty.loginsdk.library.activity
+com.thefuntasty.loginsdk.library.broadcastreceivers
+com.thefuntasty.loginsdk.library.common
+com.thefuntasty.loginsdk.library.data.model
+com.thefuntasty.loginsdk.library.data.model.client
+com.thefuntasty.loginsdk.library.providers
+com.thefuntasty.loginsdk.library.tools

@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AuthActivity - library</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">library</a>&nbsp;/&nbsp;<a href="../index.html">com.thefuntasty.loginsdk.library.activity</a>&nbsp;/&nbsp;<a href="./index.html">AuthActivity</a><br/>
+<br/>
+<h1>AuthActivity</h1>
+<code><span class="keyword">class </span><span class="identifier">AuthActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AppCompatActivity</span><span class="symbol">, </span><a href="../../com.thefuntasty.loginsdk.library.common/-coroutine-scope-owner/index.html"><span class="identifier">CoroutineScopeOwner</span></a></code>
+<p>Activity which is used to handle redirect deep-link from CustomTab. Used to parse result of OAuth login and end session flow</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AuthActivity</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Activity which is used to handle redirect deep-link from CustomTab. Used to parse result of OAuth login and end session flow</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="coroutine-scope.html">coroutineScope</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">coroutineScope</span><span class="symbol">: </span><span class="identifier">CoroutineScope</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.thefuntasty.loginsdk.library.activity.AuthActivity$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-destroy.html">onDestroy</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDestroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../com.thefuntasty.loginsdk.library.common/-coroutine-scope-owner/execute.html">execute</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../com.thefuntasty.loginsdk.library.common/-base-coroutine-interactor/index.html"><span class="identifier">BaseCoroutineInteractor</span></a><span class="symbol">&lt;</span><a href="../../com.thefuntasty.loginsdk.library.common/-coroutine-scope-owner/execute.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">execute</span><span class="symbol">(</span><span class="identifier" id="com.thefuntasty.loginsdk.library.common.CoroutineScopeOwner$execute(com.thefuntasty.loginsdk.library.common.BaseCoroutineInteractor((com.thefuntasty.loginsdk.library.common.CoroutineScopeOwner.execute.T)), kotlin.Function1((com.thefuntasty.loginsdk.library.common.CoroutineScopeOwner.execute.T, kotlin.Unit)))/onSuccess">onSuccess</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../com.thefuntasty.loginsdk.library.common/-coroutine-scope-owner/execute.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <a href="../../com.thefuntasty.loginsdk.library.common/-base-coroutine-interactor/index.html"><span class="identifier">BaseCoroutineInteractor</span></a><span class="symbol">&lt;</span><a href="../../com.thefuntasty.loginsdk.library.common/-coroutine-scope-owner/execute.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">execute</span><span class="symbol">(</span><span class="identifier" id="com.thefuntasty.loginsdk.library.common.CoroutineScopeOwner$execute(com.thefuntasty.loginsdk.library.common.BaseCoroutineInteractor((com.thefuntasty.loginsdk.library.common.CoroutineScopeOwner.execute.T)), kotlin.Function1((com.thefuntasty.loginsdk.library.common.CoroutineScopeOwner.execute.T, kotlin.Unit)), kotlin.Function1((kotlin.Throwable, kotlin.Unit)))/onSuccess">onSuccess</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../com.thefuntasty.loginsdk.library.common/-coroutine-scope-owner/execute.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="com.thefuntasty.loginsdk.library.common.CoroutineScopeOwner$execute(com.thefuntasty.loginsdk.library.common.BaseCoroutineInteractor((com.thefuntasty.loginsdk.library.common.CoroutineScopeOwner.execute.T)), kotlin.Function1((com.thefuntasty.loginsdk.library.common.CoroutineScopeOwner.execute.T, kotlin.Unit)), kotlin.Function1((kotlin.Throwable, kotlin.Unit)))/onError">onError</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Asynchronously  executes interactor, all previous pending executions are canceled</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

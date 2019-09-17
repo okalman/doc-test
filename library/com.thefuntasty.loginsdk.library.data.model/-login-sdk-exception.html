@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LoginSdkException - library</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">library</a>&nbsp;/&nbsp;<a href="index.html">com.thefuntasty.loginsdk.library.data.model</a>&nbsp;/&nbsp;<a href="./-login-sdk-exception.html">LoginSdkException</a><br/>
+<br/>
+<h1>LoginSdkException</h1>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">LoginSdkException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html"><span class="identifier">Exception</span></a></code>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-login-sdk-api-exception-connection-error/index.html">LoginSdkApiExceptionConnectionError</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">LoginSdkApiExceptionConnectionError</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-login-sdk-exception.html"><span class="identifier">LoginSdkException</span></a></code>
+<p>Exception thrown when communication whit server fails because issue on client (mobile device) side</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-login-sdk-api-exception-parse-error/index.html">LoginSdkApiExceptionParseError</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">LoginSdkApiExceptionParseError</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-login-sdk-exception.html"><span class="identifier">LoginSdkException</span></a></code>
+<p>Exception thrown when server responses with unexpected data</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-login-sdk-api-exception-unknown/index.html">LoginSdkApiExceptionUnknown</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">LoginSdkApiExceptionUnknown</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-login-sdk-exception.html"><span class="identifier">LoginSdkException</span></a></code>
+<p>Exception thrown when communication whit server fails because of HTTP error</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-login-sdk-auth-exception/index.html">LoginSdkAuthException</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">LoginSdkAuthException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-login-sdk-exception.html"><span class="identifier">LoginSdkException</span></a></code>
+<p>Exception thrown when redirect deep-link contains error message</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-login-sdk-internal-exception/index.html">LoginSdkInternalException</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">LoginSdkInternalException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-login-sdk-exception.html"><span class="identifier">LoginSdkException</span></a></code>
+<p>Exception thrown when login sdk fails to execute some operation (eg. logout before login)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

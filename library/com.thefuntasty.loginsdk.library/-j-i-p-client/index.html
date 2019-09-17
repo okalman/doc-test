@@ -1,0 +1,89 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>JIPClient - library</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">library</a>&nbsp;/&nbsp;<a href="../index.html">com.thefuntasty.loginsdk.library</a>&nbsp;/&nbsp;<a href="./index.html">JIPClient</a><br/>
+<br/>
+<h1>JIPClient</h1>
+<code><span class="keyword">class </span><span class="identifier">JIPClient</span></code>
+<p>Client for comunication with Jablotron Identity Provider (JIP).
+This class contains all methods the developers should need to implement authentication whith JIP</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">JIPClient</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Client for comunication with Jablotron Identity Provider (JIP).
+This class contains all methods the developers should need to implement authentication whith JIP</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="end-session.html">endSession</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">endSession</span><span class="symbol">(</span><span class="identifier" id="com.thefuntasty.loginsdk.library.JIPClient$endSession(kotlin.Function0((kotlin.Unit)), kotlin.Function0((kotlin.Unit)), kotlin.Function1((kotlin.Throwable, kotlin.Unit)))/onSuccess">onSuccess</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="com.thefuntasty.loginsdk.library.JIPClient$endSession(kotlin.Function0((kotlin.Unit)), kotlin.Function0((kotlin.Unit)), kotlin.Function1((kotlin.Throwable, kotlin.Unit)))/onCancel">onCancel</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="com.thefuntasty.loginsdk.library.JIPClient$endSession(kotlin.Function0((kotlin.Unit)), kotlin.Function0((kotlin.Unit)), kotlin.Function1((kotlin.Throwable, kotlin.Unit)))/onError">onError</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Deletes <a href="../../com.thefuntasty.loginsdk.library.data.model/-token/index.html">Token</a> from persistence, revokes token on server and deletes session from web browser.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-claim.html">getClaim</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getClaim</span><span class="symbol">(</span><span class="identifier" id="com.thefuntasty.loginsdk.library.JIPClient$getClaim(kotlin.String)/claimName">claimName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code>
+<p>Tires to obtain claim with specified name</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-token.html">getToken</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getToken</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.thefuntasty.loginsdk.library.data.model/-token/index.html"><span class="identifier">Token</span></a><span class="symbol">?</span></code>
+<p>Provides access to locally stored <a href="../../com.thefuntasty.loginsdk.library.data.model/-token/index.html">Token</a> after successful <a href="login.html">login</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="login.html">login</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">login</span><span class="symbol">(</span><span class="identifier" id="com.thefuntasty.loginsdk.library.JIPClient$login(kotlin.Function1((com.thefuntasty.loginsdk.library.data.model.Token, kotlin.Unit)), kotlin.Function0((kotlin.Unit)), kotlin.Function1((kotlin.Throwable, kotlin.Unit)))/onSuccess">onSuccess</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../com.thefuntasty.loginsdk.library.data.model/-token/index.html"><span class="identifier">Token</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="com.thefuntasty.loginsdk.library.JIPClient$login(kotlin.Function1((com.thefuntasty.loginsdk.library.data.model.Token, kotlin.Unit)), kotlin.Function0((kotlin.Unit)), kotlin.Function1((kotlin.Throwable, kotlin.Unit)))/onCancel">onCancel</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="com.thefuntasty.loginsdk.library.JIPClient$login(kotlin.Function1((com.thefuntasty.loginsdk.library.data.model.Token, kotlin.Unit)), kotlin.Function0((kotlin.Unit)), kotlin.Function1((kotlin.Throwable, kotlin.Unit)))/onError">onError</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Starts OAuth 2.0 login flow with web browser.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="log-out.html">logOut</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">logOut</span><span class="symbol">(</span><span class="identifier" id="com.thefuntasty.loginsdk.library.JIPClient$logOut(kotlin.Function0((kotlin.Unit)), kotlin.Function1((kotlin.Throwable, kotlin.Unit)))/onSuccess">onSuccess</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="com.thefuntasty.loginsdk.library.JIPClient$logOut(kotlin.Function0((kotlin.Unit)), kotlin.Function1((kotlin.Throwable, kotlin.Unit)))/onError">onError</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Deletes <a href="../../com.thefuntasty.loginsdk.library.data.model/-token/index.html">Token</a> from persistence and revokes token on server</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="refresh-token.html">refreshToken</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">refreshToken</span><span class="symbol">(</span><span class="identifier" id="com.thefuntasty.loginsdk.library.JIPClient$refreshToken(kotlin.Function1((com.thefuntasty.loginsdk.library.data.model.Token, kotlin.Unit)), kotlin.Function1((kotlin.Throwable, kotlin.Unit)))/onSuccess">onSuccess</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../com.thefuntasty.loginsdk.library.data.model/-token/index.html"><span class="identifier">Token</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="com.thefuntasty.loginsdk.library.JIPClient$refreshToken(kotlin.Function1((com.thefuntasty.loginsdk.library.data.model.Token, kotlin.Unit)), kotlin.Function1((kotlin.Throwable, kotlin.Unit)))/onError">onError</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Refreshes <a href="../../com.thefuntasty.loginsdk.library.data.model/-token/index.html">Token</a> when old one expired.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
